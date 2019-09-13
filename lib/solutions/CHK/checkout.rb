@@ -1,8 +1,8 @@
 # noinspection RubyUnusedLocalVariable
 class Checkout
-
   def checkout(skus)
-    raise 'Not implemented'
+    -1
   end
 
 end
+
