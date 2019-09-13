@@ -17,4 +17,3 @@ ERROR:  Error installing bundle:
  bundler requires Ruby version >= 2.3.0.
 
 So I switched the Ruby version to 2.6.4
-
