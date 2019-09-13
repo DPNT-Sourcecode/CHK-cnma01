@@ -4,6 +4,7 @@ class Checkout
     freqs = {}
     cost = 0
     return -1 if skus.empty?
+    return -1 unless skus =~ /[A-Z,]+/
 
     skus.split(',').each do |sku|
       if freqs[sku]
@@ -24,3 +25,4 @@ class Checkout
   end
 
 end
+
