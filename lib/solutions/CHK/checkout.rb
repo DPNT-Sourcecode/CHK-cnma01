@@ -13,8 +13,8 @@ class Checkout
       end
     end
 
-    a_discounts = freqs['A'] / 3
-    b_discounts = freqs['B'] / 2
+    a_discounts = freqs['A'] / 3 if freqs['A']
+    b_discounts = freqs['B'] / 2 if freqs['B']
 
     cost = freqs['A']*50 + freqs['B']*30 + freqs['C']*20 + freqs['D']*15
     cost -= 20*freqs['A']
@@ -24,5 +24,6 @@ class Checkout
   end
 
 end
+
 
 
